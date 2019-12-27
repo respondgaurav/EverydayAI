@@ -30,3 +30,10 @@ jobs:
         extra_packages: # optional
         # Install extra packages by apk
         extra_system_packages: # optional
+    - name: Upload PDF File
+      uses: actions/upload-artifact@v1.0.0
+      with:
+        # Artifact name
+        name: Upload final PDF file
+        # Directory containing files to upload
+        path: main.pdf
